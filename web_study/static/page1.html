@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학과 소개</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555555;
+    }
+
+    .department {
+      margin-bottom: 20px;
+    }
+
+    .department h2 {
+      color: #333333;
+    }
+
+    .department p {
+      color: #777777;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>학과 소개</h1>
+
+    <div class="department">
+      <h2>모바일시스템공학과</h2>
+        <div class="slideshow-container">
+            <img class="mySlides" src="/static/img/m1.jpg" alt="Image 1">
+            <img class="mySlides" src="/static/img/m2.jpg" alt="Image 2">
+            <img class="mySlides" src="/static/img/m3.jpg" alt="Image 3">
+            <img class="mySlides" src="/static/img/m4.jpg" alt="Image 4">
+            <img class="mySlides" src="/static/img/m5.jpg" alt="Image 5">
+
+</div>
+      <p>모바일시스템공학과의 교육 목표는 사물인터넷, 인공지능, 빅데이터, 스마트 자동차 등 최신 모바일 시스템과 IT 기술의 이해를 기반으로 리더십을 갖춘 글로벌 인재를 육성하며, 실제 산업현장의 문제를 해결할 수 있는 전문가를 육성하는 것입니다. 이를 위해 산업체 수요중심의 주요 전공 교과목을 영어로 강의함으로써 4차 산업혁명을 이끌 글로벌 인재를 육성하기 위해 노력하고 있습니다.
+      2012년 글로벌 인재 육성을 목표로 국제학부, 국제대학 모바일시스템공학과를 거쳐 2018학년도 SW융합대학으로 소속이 변경되었습니다. 2017년부터 단국대 SW중심대학 사업에 참여함으로써 전공 교과과정의 다양화와 더욱 높은 수준의 전문화를 지향하고 있습니다.</p>
+</div>
+
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // 이미지 변경 간격
+  }
+</script>
+
+<a href="tel:[+82 031-8005-3638]">📱 : Department call</a>
+  </div>
+</body>
+</html>

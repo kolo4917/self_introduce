@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+  <style>
+    body {
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .block {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #4287f5;
+      color: white;
+      text-align: center;
+      font-size: 48px;
+      line-height: 200px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .block:hover {
+      transform: scale(1.4);
+      background-color: #e84c3d;
+    }
+
+    .block .alphabet {
+      transition: opacity 0.3s;
+    }
+
+    .block .description {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      line-height: 200px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .block:hover .alphabet {
+      opacity: 0;
+    }
+
+    .block:hover .description {
+      opacity: 1;
+    }
+
+    /* 추가된 스타일 */
+    .mbti-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .mbti-description {
+      text-align: justify;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="block" onmouseover="showDescription(this, 'Extraversion, (E)','외향')">
+      <span class="alphabet">E</span>
+      <span class="description">Extraversion<br>(외향성)</span>
+    </div>
+    <div class="block" onmouseover="showDescription(this, 'Intuition, (N)','직관')">
+      <span class="alphabet">N</span>
+      <span class="description">Intuition<br>(직관성)</span>
+    </div>
+    <div class="block" onmouseover="showDescription(this, 'Feeling, (F)','감정')">
+      <span class="alphabet">F</span>
+      <span class="description">Feeling<br>(감정 중심성)</span>
+    </div>
+    <div class="block" onmouseover="showDescription(this, 'Judging, (J)','계획')">
+      <span class="alphabet">J</span>
+      <span class="description">Judging<br>(판단성)</span>
+    </div>
+  </div>
+
+  <!-- 추가된 내용 -->
+  <div class="mbti-container">
+    <div class="mbti-description">
+      <h1>ENFJ - The Protagonist</h1>
+      <p>
+        ENFJs are charismatic and inspiring leaders who are passionate about making a positive impact on the world. They are empathetic, warm, and genuinely care about the well-being of others. ENFJs excel in social situations and have a natural ability to connect with people on an emotional level.
+      </p>
+      <p>
+        As natural-born leaders, ENFJs often take on the role of guiding and motivating others towards a common goal. They are skilled communicators and enjoy inspiring and empowering those around them. ENFJs are great listeners and offer support and guidance to those in need.
+      </p>
+      <p>
+        ENFJs have a strong sense of values and strive for harmony and cooperation. They are driven by their ideals and work towards creating a better future. They can be persuasive and influential in bringing about positive change.
+      </p>
+      <p>
+        However, ENFJs may sometimes put others' needs before their own, leading to burnout. It is important for them to establish boundaries and take care of their own well-being. Despite their outgoing and sociable nature, ENFJs also value their alone time to recharge and reflect.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showDescription(block, type, description) {
+      var alphabet = block.querySelector(".alphabet");
+      var descriptionElem = block.querySelector(".description");
+      alphabet.style.opacity = 0;
+      descriptionElem.innerHTML = type + "<br>" + description;
+      descriptionElem.style.opacity = 1;
+    }
+
+    function hideDescription(block) {
+      var alphabet = block.querySelector(".alphabet");
+      var descriptionElem = block.querySelector(".description");
+      alphabet.style.opacity = 1;
+      descriptionElem.style.opacity = 0;
+    }
+  </script>
+</body>
+</html>

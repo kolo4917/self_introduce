@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+
+}
+
+img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image_stack {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover;
+    float: left;
+
+  }
+
+  .image_pf {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover;
+    float: left;
+
+  }
+
+.image-container {
+    display: flex;
+  }
+
+p {
+  line-height: 1.6;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.skills {
+  font-weight: bold;
+  color: #333333;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.section ul {
+  margin-bottom: 20px;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+ .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #e0e0e0;
+      color: #333333;
+      text-decoration: none;
+      margin-right: 10px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #28d8d8;
+    }
+
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Hello, world! <br>I'm circle 😃😃 </h1>
+    <img src="/static/img/123.jpg" alt="mobile.png">
+    <p>Be : Cirlce<br>This is me </p>
+
+    <div class="section">
+      <h2>보유 기술</h2>
+      <ul class="skills">
+        <div class="image-container">
+          <img src="/static/img/c.png" alt="mobile.png" class = "image_stack">
+          <img src="/static/img/python.png" alt="mobile.png" class = "image_stack">
+          <img src="/static/img/js.png" alt="mobile.png" class = "image_stack">
+          <img src="/static/img/sql.png" alt="mobile.png" class = "image_stack">
+        </div>
+        <li>C & C++</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:[circle0905@naver.com]">📫: Email</a>
+        <a href="tel:[+82 010-5663-0635]">📱 : Phone</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Career</h2>
+      <ul>
+        <li>[LG CNS] - [AI GENIUS] (22.07~12)</li>
+        <li>[CJ OLIVE NETWORKS] - [CJ UNIT] (23.03~)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Major instruction</h2>
+      <ul>
+        <LI><button class="button" onclick="buttonClicked(1); location.href='/static/page1.html'">Dankook University</button></LI>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>MBTI</h2>
+      <ul>
+        <li>  <button class="button" onclick="buttonClicked(2); location.href='/static/page2.html'">ENFJ</button></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Language skills</h2>
+      <ul>
+        <li>  <button class="button" onclick="buttonClicked(4); location.href='/static/page4.html'">Japanese</button></li>
+        <li>  <button class="button" onclick="buttonClicked(5); location.href='/static/page5.html'">English</button></li>
+      </ul>
+    </div>
+
+        <div class="section">
+      <h2>PF Link</h2>
+      <ul>
+        <a href="https://github.com/kolo4917"><img src="/static/img/github.png" class = "image_pf"/></a>
+        <a href="https://www.instagram.com/circle__00"/><img src="/static/img/insta.jpg" class = "image_pf"/></a>
+        <a href="https://www.youtube.com/channel/UCeNKZngcblRWo_OSB4qKhHg"/><img src="/static/img/youtube.png" class = "image_pf"/></a>
+        <a href="https://blog.naver.com/circle0905"/><img src="/static/img/blog.png" class = "image_pf"/></a>
+        <a href="http://127.0.0.1:8000/admin/login/?next=/admin/"><img src="/static/img/admin.png" class = "image_pf"/></a>
+
+      </ul>
+    </div>
+
+  </div>
+   <script>
+    function buttonClicked(buttonNumber) {
+      console.log("Button " + buttonNumber + " clicked!");
+    }
+  </script>
+</body>
+
+</html>
